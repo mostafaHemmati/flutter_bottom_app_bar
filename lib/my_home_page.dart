@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'bottom_nav_bar_1.dart';
 import 'custom_navigation_bar.dart';
 
 class MYHomePage extends StatefulWidget {
@@ -28,28 +27,28 @@ class _MYHomePageState extends State<MYHomePage> {
     List<Widget> pages = [
       Container(
         alignment: Alignment.center,
-        child: Text(
+        child: const Text(
           "Home",
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
       ),
       Container(
         alignment: Alignment.center,
-        child: Text(
+        child: const Text(
           "Users",
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
       ),
       Container(
         alignment: Alignment.center,
-        child: Text(
+        child: const Text(
           "Messages",
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
       ),
       Container(
         alignment: Alignment.center,
-        child: Text(
+        child: const Text(
           "Settings",
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
@@ -72,22 +71,22 @@ class _MYHomePageState extends State<MYHomePage> {
       onItemSelected: (index) => setState(() => _currentIndex = index),
       items: <BottomNavyBarItem>[
         BottomNavyBarItem(
-          icon: Icon(Icons.apps),
-          title: Text('Home'),
+          icon: const Icon(Icons.apps),
+          title: const Text('Home'),
           activeColor: Colors.green,
           inactiveColor: _inactiveColor,
           textAlign: TextAlign.center,
         ),
         BottomNavyBarItem(
-          icon: Icon(Icons.people),
-          title: Text('Users'),
+          icon: const Icon(Icons.people),
+          title: const Text('Users'),
           activeColor: Colors.purpleAccent,
           inactiveColor: _inactiveColor,
           textAlign: TextAlign.center,
         ),
         BottomNavyBarItem(
-          icon: Icon(Icons.message),
-          title: Text(
+          icon: const Icon(Icons.message),
+          title: const Text(
             'Messages ',
           ),
           activeColor: Colors.pink,
@@ -95,8 +94,8 @@ class _MYHomePageState extends State<MYHomePage> {
           textAlign: TextAlign.center,
         ),
         BottomNavyBarItem(
-          icon: Icon(Icons.settings),
-          title: Text('Settings'),
+          icon: const Icon(Icons.settings),
+          title: const Text('Settings'),
           activeColor: Colors.blue,
           inactiveColor: _inactiveColor,
           textAlign: TextAlign.center,
